@@ -12,7 +12,6 @@ import Work from "./pages/Work";
 function App() {
 	return (
 		<div>
-			<Header />
 			<main>
 				<Routes>
 					<Route path="/" element={<Home />} />
@@ -22,7 +21,6 @@ function App() {
 					<Route path="/work" element={<Work />} />
 				</Routes>
 			</main>
-			<Footer />
 		</div>
 	);
 }
