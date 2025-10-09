@@ -1,0 +1,36 @@
+/* container voor de tabel */
+.data-table {
+	margin-left: 3%;
+	padding: 20px;
+	margin-top: 8%;
+	width: 90vw;
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+	color: black;
+	font-size: 16px;
+}
+
+/* styling voor de tabel */
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+td {
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #000;
+}
+thead td {
+	color: blue;
+	text-decoration: underline;
+}
+td:hover {
+	cursor: pointer;
+}
+
+th {
+	font-weight: bold;
+}
+tr:hover {
+	background-color: #f1f1f1;
+}

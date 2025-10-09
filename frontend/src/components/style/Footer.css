@@ -1,0 +1,40 @@
+/* Styling voor de footer container */
+.footer-comp {
+	padding: 20px;
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	left: 2.5%;
+	padding: 5px 20px 20px 20px;
+	font-family: Helvetica;
+	color: black;
+}
+/* Styling voor "Contact:" */
+.footer-comp p {
+	text-align: left;
+}
+/* Styling voor de lijst */
+.footer-comp-links {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Styling voor li */
+.footer-comp-links li {
+	display: inline;
+	margin-right: 5px;
+	text-decoration: underline;
+}
+
+/* Styling voor de links */
+.footer-comp-links a {
+	text-decoration: none;
+}
+
+/* Als het scherm kleiner is dan 767 dan wordt de footer niet meer weergegeven. */
+@media screen and (max-width: 767px) {
+	.footer-comp {
+		display: none;
+	}
+}
