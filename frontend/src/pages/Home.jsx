@@ -1,24 +1,34 @@
 import React from "react";
-import background1 from "../assets/151134130003_6.jpg";
-import background from "../assets/Group 2.svg";
-import overlay from "../assets/Scan.jpeg";
+import { Helmet } from "react-helmet";
 import "../components/style/Header.css";
+
+// Importeer je nieuwe contactregel-afbeeldingen
+import contactLine1 from "../assets/Herotextzw.png";
 
 function Home() {
 	return (
-		<div
-			style={{
-				position: "relative",
-				width: "92vw",
-				height: "92vh",
-				overflow: "hidden",
-				textAlign: "center",
-				backgroundImage: `url(${background})`,
-				backgroundSize: "cover",
-				backgroundPosition: "center",
-				backgroundRepeat: "no-repeat",
-			}}
-		></div>
+		<>
+			<Helmet>
+				<title>Wegmelk - DIY Label & Zine</title>
+				<meta
+					name="description"
+					content="Wegmelk is a label & zine based in Brussels with a focus on unconventional art and music"
+				/>
+				<meta
+					name="keywords"
+					content="music, zine, Brussels, live sessions, releases, radio, works"
+				/>
+			</Helmet>
+			<div className="home-container">
+				<div className="contact-section">
+					<img
+						src={contactLine1}
+						alt="Contact line 1"
+						className="contact-line"
+					/>
+				</div>
+			</div>
+		</>
 	);
 }
 

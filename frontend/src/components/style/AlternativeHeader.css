@@ -1,4 +1,142 @@
-.Header {
-	margin-top: 2.5%;
-	margin-left: 1%;
+/* Container die hele pagina beslaat */
+.contact-page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* volledige hoogte */
+	position: relative;
+	font-family: Helvetica, sans-serif;
+	color: #000;
+}
+
+/* Wrapper voor newsletter: center in resterende ruimte */
+.newsletter-wrapper {
+	flex: 1; /* neemt alle ruimte boven footer */
+	display: flex;
+	justify-content: center; /* horizontaal */
+	align-items: center; /* verticaal */
+	padding-bottom: 80px; /* ruimte vrijlaten voor footer */
+}
+
+/* Newsletter inline component: neem max de nodige ruimte */
+.newsletter-inline {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	max-width: 250px; /* optioneel: voorkom dat hij te breed wordt */
+	width: 100%;
+}
+
+.newsletter-input {
+	padding: 8px 10px;
+	font-size: 15px;
+	border: 1px solid #000;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.newsletter-btn {
+	padding: 8px 14px;
+	background-color: white;
+	color: black;
+	border: 1px solid #000;
+	cursor: pointer;
+	width: 100%;
+}
+
+/* Succes / error bericht */
+.subscribe-message {
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+
+.footer-socials {
+	display: flex;
+	gap: 10px;
+}
+
+/* Privacy link onder newsletter */
+.privacy-link {
+	margin-top: 1px;
+	font-size: 10px;
+	text-align: center;
+}
+
+.privacy-link a {
+	color: black;
+	text-decoration: underline;
+}
+.privacy-container {
+	margin-top: 7.5%;
+	margin-left: 2%;
+	font-family: Helvetica;
+}
+.subscribe-message {
+	font-size: 12px; /* kleiner lettertype */
+	color: black; /* zwart ipv wit */
+	text-align: center;
+	margin-top: 4px;
+}
+/* --- Responsive Breakpoints --- */
+
+/* Tablets */
+@media (max-width: 900px) {
+	.newsletter-wrapper {
+		padding: 0 15px;
+	}
+	.newsletter-inline {
+		max-width: 250px;
+	}
+}
+
+/* Mobiel */
+@media (max-width: 600px) {
+	.newsletter-wrapper {
+		padding: 0 10px;
+	}
+	.newsletter-inline {
+		max-width: 200px;
+		gap: 8px;
+	}
+	.newsletter-input {
+		font-size: 14px;
+		padding: 8px;
+	}
+	.newsletter-btn {
+		font-size: 14px;
+		padding: 8px;
+	}
+	.footer-container {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+/* --- Newsletter Section --- */
+.newsletter-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 20px;
+}
+
+.newsletter-heading {
+	width: 300px;
+	max-width: 80%;
+	height: auto;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+	.newsletter-heading {
+		width: 250px;
+	}
+}
+
+@media (max-width: 600px) {
+	.newsletter-heading {
+		width: 200px;
+	}
 }

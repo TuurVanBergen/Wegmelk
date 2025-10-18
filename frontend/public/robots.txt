@@ -1,0 +1,7 @@
+# robots.txt for Wegmelk
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.wegmelk.com/sitemap.xml
